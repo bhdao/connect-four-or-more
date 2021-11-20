@@ -1,0 +1,165 @@
+body {
+  width: 100%;
+  height: 100%;
+  background: rgb(69, 180, 180);
+  margin: 0;
+  color: white;
+  font-family: "Nunito", sans-serif;
+}
+
+h1,
+h2 {
+  margin: 0;
+  text-align: center;
+  margin: 5px 0;
+}
+
+#boardBody {
+  max-width: 600px;
+  padding: 20px;
+  margin: 0 auto;
+  background: rgb(18, 142, 132);
+  border-radius: 20px;
+  position: relative;
+}
+
+#author {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px;
+  justify-content: first baseline;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#boardContainer {
+  justify-content: center;
+  align-items: center;
+}
+
+.boardSlot {
+  display: flex;
+  min-height: 80px;
+  min-width: 80px;
+  background: white;
+  flex-direction: row;
+  margin: 4px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+
+.checked {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 80%;
+  max-height: 80%;
+  position: absolute;
+  border-radius: 300%;
+  background-color: slategray;
+  margin: auto auto;
+}
+
+.checked.p1 {
+  background-color: paleturquoise;
+}
+
+.checked.p2 {
+  background-color: hotpink;
+}
+
+.checked > * {
+  outline: 1px solid white;
+}
+
+.boardRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.UI.boardSlot {
+  background: none;
+  height: 94%;
+  justify-content: top;
+  align-items: top;
+  display: flex;
+  margin: 4px;
+}
+
+#spacer > .UI.boardSlot {
+  background: none;
+  border-radius: 100%;
+}
+
+#spacer > .UI.boardSlot.p1 {
+  background: rgba(175, 238, 238, 0.535);
+}
+#spacer > .UI.boardSlot.p2 {
+  background: rgba(255, 105, 180, 0.5);
+}
+
+/* .UI.boardSlot:hover {
+  background-color: rgba(0, 255, 128, 0.549);
+} */
+
+#turnIndicator {
+  margin-top: 5px;
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+}
+
+#turnIndicator.p1 {
+  text-decoration-color: paleturquoise;
+}
+
+#turnIndicator.p2 {
+  text-decoration-color: hotpink;
+}
+
+#UIrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+}
+
+.turn {
+  position: relative;
+  max-width: 600px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#Restart {
+  position: absolute;
+  right: 0;
+}
+
+#scores {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  position: absolute;
+  left: 0;
+}
+
+/* .boardRow[data-row="0"] {
+}
+
+.boardRow[data-row="0"] > .boardSlot {
+  height: 100%;
+  max-height: 500%;
+  background: black;
+} */

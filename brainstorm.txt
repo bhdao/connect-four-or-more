@@ -1,0 +1,33 @@
+Game flow:
+
+1) Player 1 turn
+2) Player 1 selects a column to drop a piece
+3) Check if Player 1 has won
+3) Becomes Player 2 turn
+4) Player 2 selects a column to drop a piece
+5) Check if Player 2 has won
+REPEAT
+
+Features to consider:
+- Start and Reset game buttons
+- Declare winner
+- Coinflip deciding who is player 1 (could just be red and yellow pieces)
+- Light and dark theme
+- Score counter
+- Number of turns counter
+- Last-placed piece indicator
+- Player name input
+- Player color selector
+- Dynamic grid dimensions
+- Animations
+- Different shapes for pieces
+
+November 19th Update:
+Game 1st draft completed! 🎊
+
+Notable features implemented:
+- Current player turn indicator
+- Hover preview before placing pieces
+- Win notification with proper number of connected valid pieces
+- Prevents players from placing pieces after a completed game
+- Randomizes which player starts per game
